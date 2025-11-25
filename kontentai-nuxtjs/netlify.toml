@@ -1,0 +1,9 @@
+[build]
+  base = "src"
+  command = "npm install --include=optional && npm run generate"
+  publish = ".output/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NITRO_PRESET = "static"
+
